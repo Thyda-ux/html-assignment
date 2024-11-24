@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account Form</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <form>
+      <div class="row">
+        <div class="column">
+          <label for="first-name">First name *</label>
+          <input type="text" id="first-name" placeholder="Enter your first name">
+        </div>
+        <div class="column">
+          <label for="last-name">Last name *</label>
+          <input type="text" id="last-name" placeholder="Enter your last name">
+        </div>
+      </div>
+      <label for="email">Email *</label>
+      <input type="email" id="email" placeholder="Enter your email">
+      <div class="row">
+        <div class="column">
+          <label for="password">Password *</label>
+          <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="column">
+          <label for="confirm-password">Confirm Password *</label>
+          <input type="password" id="confirm-password" placeholder="Enter your password again">
+        </div>
+      </div>
+      <div class="row">
+        <label>Gender</label>
+        <div>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <label>Hobbies</label>
+      <div class="checkbox-group">
+        <input type="checkbox" id="music" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="travel" value="travel">
+        <label for="travel">Travel</label>
+        <input type="checkbox" id="movies" value="movies">
+        <label for="movies">Movies</label>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="income-source">Source of Income</label>
+          <select id="income-source">
+            <option>Employed</option>
+            <option>Unemployed</option>
+            <option>Student</option>
+          </select>
+        </div>
+        <div class="column">
+          <label for="income">Income</label>
+          <input type="range" id="income" min="0" max="100000" step="1000">
+          <span id="income-value">20K</span>
+        </div>
+      </div>
+      <label for="profile-pic">Upload Profile Picture</label>
+      <input type="file" id="profile-pic">
+      <label for="bio">Bio</label>
+      <textarea id="bio" placeholder="Enter your bio"></textarea>
+      <button type="submit">Create</button>
+    </form>
+  </div>
+</body>
+</html>
